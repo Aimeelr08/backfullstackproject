@@ -1,7 +1,6 @@
 #!/bin/bash
-curl --include --request GET https://backfullstackrepo.herokuapp.com
 
-API="${API_ORIGIN:-https://backfullstackrepo.herokuapp.com}"
+API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/users"
 curl "${API}${URL_PATH}/$ID" \
   --include \
